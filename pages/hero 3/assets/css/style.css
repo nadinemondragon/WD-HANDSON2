@@ -1,0 +1,54 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.headerlanding {
+    background-color: lightblue;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.headerlanding a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.headerlanding a:hover {
+    background-color: lightblue;
+}
+
+.hero-container {
+    background-image: url('../img/hero3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.8em;
+    max-width: 600px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
