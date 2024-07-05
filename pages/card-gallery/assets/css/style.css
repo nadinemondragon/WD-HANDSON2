@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headerlanding {
+    background-color: lightblue;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.headerlanding a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.headerlanding a:hover {
+    background-color: lightblue;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.australia {
+    background-color: #ffebcd;
+    color: #8b4513;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    font-size: 1.2em;
+    height: 550px;
+    grid-column: span 1;
+}
+
+.switzerland {
+    background-color: #e6e6fa;
+    color: #4b0082;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    font-size: 1.5em;
+    height: 850px; 
+    grid-column: span 2; 
+}
+
+.usa {
+    background-color: #f0f8ff;
+    color: #000080;
+    font-family: 'Verdana', Geneva, sans-serif;
+    text-align: center;
+    font-size: 1.1em;
+    height: 600px;
+    border: 10px solid ; 
+    box-sizing: border-box;
+    padding: 10px;
+    grid-column: span 1;
+}
+
+.greece {
+    background-color: #f5fffa;
+    color: #2f4f4f;
+    font-family: 'Georgia', serif;
+    text-align: justify;
+    font-size: 1.3em;
+    height: 570px;
+    grid-column: span 1;
+}
+
+.maldives {
+    background-color: lightpink
+    color: #228b22;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: left;
+    font-size: 1.4em;
+    height: 480px;
+    border: 10px solid #228b22; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.maldives:nth-child(odd) {
+    transform: rotate(5deg);
+}
+
+.maldives:nth-child(even) {
+    transform: rotate(-5deg);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.image .caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.australia .image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.switzerland .image img {
+    height: 30%;
+    object-fit: contain;
+    border-radius: 50%; 
+}
+
+.usa .image img {
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid #000080;
+}
+
+.greece .image img {
+    height: 90%;
+    object-fit: contain;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.maldives .image img {
+    height: 100%;
+    object-fit: cover;
+    border: 5px dashed #228b22;
+}
+
+.animated img {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
