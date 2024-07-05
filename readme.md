@@ -6,50 +6,28 @@
 <div align="center">
   <a href="https://github.com/zyx-0314/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+  
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Hands on 2: Hero & Card Display</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  This project showcases different styles of heroes and cards, static and animated.
 </div>
 
 <br />
 
-<!-- TODO: Change the zyx-0314 into your github username  -->
-<!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+<!-- TODO: Change the zyx-0314 into your github username  --> nadinemondragon
+<!-- TODO: Change the WD-Template-Project into the same name of your folder --> 
+WD-HANDSON2
 
 ---
 
 <br />
 <br />
 
-<!-- TODO: If you want to add more layers for your readme -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#overview">Overview</a>
-      <ol>
-        <li>
-          <a href="#key-components">Key Components</a>
-        </li>
-        <li>
-          <a href="#technology">Technology</a>
-        </li>
-      </ol>
-    </li>
-    <li>
-      <a href="#rule,-practices-and-principles">Rules, Practices and Principles</a>
-    </li>
-    <li>
-      <a href="#resources">Resources</a>
-    </li>
-  </ol>
-</details>
+
 
 ---
 
@@ -60,10 +38,19 @@
 Description of the project in details.
 
 Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+- What is the project?
+  The project involves creating a website showcasing different hero and card designs using HTML and CSS. It includes a landing page with navigation to galleries displaying static and animated versions of heroes and cards.
+- Whats the purpose?
+  The purpose of the website is to demonstrate creativity in web design using pure HTML and CSS. It serves as a portfolio or showcase of different design styles for heroes and cards.
+- What are key components?
+Landing Page: Introduction to the project with a title, subtitle, description, and navigation buttons.
+Hero Gallery: Displaying 5 different hero designs with unique styles.
+Card Gallery: Showcasing 5 static and 5 animated card designs, each distinct in format and appearance.
+Navigation: Seamless navigation between the landing page, hero gallery, and card gallery.
+File Structure: Organized using lower-kebab-case naming conventions with external CSS files for styling.
+- What technology used and how it is used?
+HTML: Structure the content of the website.
+CSS: Style the elements for design aesthetics.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
@@ -76,7 +63,7 @@ Guiding Question:
 <!-- TODO: List of Technology Used -->
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
+
 
 ## Rules, Practices and Principles
 1. Always use `WD-` in the front of the Title of the Project for the Subject followed by your custom naming.
@@ -117,4 +104,4 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Conventional Commits | Guide in effectively using commit messages. | (https://www.conventionalcommits.org/en/v1.0.0-beta.2/) |
