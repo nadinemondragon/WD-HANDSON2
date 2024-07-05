@@ -12,14 +12,14 @@ body {
     height: 100vh;
 }
 
-.header {
+.headerlanding {
     background-color: lightblue;
     padding: 10px 0;
     text-align: center;
     width: 100%;
 }
 
-.header a {
+.headerlanding a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -28,7 +28,7 @@ body {
     transition: background-color 0.3s;
 }
 
-.header a:hover {
+.headerlanding a:hover {
     background-color: lightblue;
 }
 
