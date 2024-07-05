@@ -26,7 +26,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    padding: 20px;
+    padding: 15px;
 }
 
 header {
@@ -69,7 +69,7 @@ header {
     font-family: 'Times New Roman', Times, serif;
     text-align: right;
     font-size: 1.5em;
-    height: 840px; 
+    height: 860px; 
     grid-column: span 2; 
 }
 
@@ -98,7 +98,7 @@ header {
 
 .maldives {
     background-color: lightpink
-    color: #228b22;
+    color:#000080 #228b22;
     font-family: 'Comic Sans MS', cursive, sans-serif;
     text-align: left;
     font-size: 1.4em;
