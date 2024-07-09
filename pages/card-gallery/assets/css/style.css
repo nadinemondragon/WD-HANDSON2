@@ -1,191 +1,125 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.headerlanding {
-    background-color: lightblue;
-    padding: 10px 0;
-    text-align: center;
-    width: 100%;
-}
-
-.headerlanding a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.headerlanding a:hover {
-    background-color: lightblue;
-}
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    padding: 15px;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .card {
+    background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    transition: transform 0.3s;
-    position: relative;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.australia {
-    background-color: #ffebcd;
-    color: #8b4513;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: left;
-    font-size: 1.2em;
-    height: 550px;
-    grid-column: span 1;
-}
-
-.switzerland {
-    background-color: #e6e6fa;
-    color: #4b0082;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: right;
-    font-size: 1.5em;
-    height: 860px; 
-    grid-column: span 2; 
-}
-
-.usa {
-    background-color: #f0f8ff;
-    color: #000080;
-    font-family: 'Verdana', Geneva, sans-serif;
+    overflow: hidden;
+    width: 250px;
     text-align: center;
-    font-size: 1.1em;
-    height: 600px;
-    border: 10px solid ; 
-    box-sizing: border-box;
-    padding: 10px;
-    grid-column: span 1;
-}
-
-.greece {
-    background-color: #f5fffa;
-    color: #2f4f4f;
-    font-family: 'Georgia', serif;
-    text-align: justify;
-    font-size: 1.3em;
-    height: 570px;
-    grid-column: span 1;
-}
-
-.maldives {
-    background-color: lightpink
-    color:#000080 #228b22;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    text-align: left;
-    font-size: 1.4em;
-    height: 480px;
-    border: 10px solid #228b22; 
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    position: relative;
 }
 
-.maldives:nth-child(odd) {
-    transform: rotate(5deg);
+.card-image {
+    width: 100%;
+    height: auto;
 }
 
-.maldives:nth-child(even) {
-    transform: rotate(-5deg);
+.card-content {
+    padding: 15px;
 }
 
 .card h2 {
-    margin-bottom: 10px;
-    font-size: 2em;
+    font-size: 22px;
+    margin: 10px 0;
+    color: #333;
 }
 
-.image {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 10px;
+.card p {
+    font-size: 16px;
+    color: #666;
 }
 
-.image img {
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
+/* Unique Styles for Each Card */
+
+.card-australia {
+    background-color: #e3f2fd;
 }
 
-.image .caption {
+.card-australia .card-content {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card-australia .card-image {
+    order: 1;
+}
+
+.card-switzerland {
+    background-color: #e8f5e9;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.card-switzerland .card-content {
+    text-align: right;
+    font-family: 'Georgia', serif;
+}
+
+.card-switzerland .card-image {
+    width: 50%;
+}
+
+.card-usa {
+    background-color: #fff3e0;
+}
+
+.card-usa .card-content {
     text-align: center;
-    margin-top: 10px;
-    font-size: 14px;
+    font-family: 'Verdana', sans-serif;
 }
 
-.australia .image img {
-    height: 100%;
+.card-usa .card-image {
+    order: 2;
+    height: 150px;
     object-fit: cover;
 }
 
-.switzerland .image img {
-    height: 20%;
-    object-fit: contain;
-    border-radius: 5%; 
+.card-maldives {
+    background-color: #fce4ec;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
-.usa .image img {
-    height: 100%;
+.card-maldives .card-content {
+    text-align: left;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.card-maldives .card-image {
+    height: 200px;
     object-fit: cover;
-    border: 5px solid #000080;
 }
 
-.greece .image img {
-    height: 90%;
-    object-fit: contain;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+.card-greece {
+    background-color: #e8eaf6;
+    display: flex;
+    flex-direction: column;
 }
 
-.maldives .image img {
-    height: 100%;
-    object-fit: cover;
-    border: 5px dashed #228b22;
+.card-greece .card-content {
+    text-align: center;
+    font-family: 'Tahoma', sans-serif;
+    order: 1;
 }
 
-.animated img {
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
+.card-greece .card-image {
+    order: 2;
+    width: 100%;
 }
