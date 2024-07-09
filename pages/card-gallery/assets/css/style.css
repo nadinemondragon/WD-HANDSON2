@@ -123,3 +123,77 @@ body {
     order: 2;
     width: 100%;
 }
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-360deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.card-australia.animated {
+    animation: slideIn 1s ease-out;
+}
+
+.card-switzerland.animated {
+    animation: fadeIn 1.5s ease-in;
+}
+
+.card-usa.animated {
+    animation: zoomIn 1s ease-out;
+}
+
+.card-maldives.animated {
+    animation: rotateIn 1.5s ease-in-out;
+}
+
+.card-greece.animated {
+    animation: bounceIn 1s ease-out;
+}
